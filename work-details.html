@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="assets/img/fav-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main Title -->
+    <title>Lens Craft || Work Details Page</title>
+    <!-- Main CSS -->
+     <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-mainBg">
+    <!-- Header Area Start Here -->
+    <header id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 xl:px-0 px-4">
+        <div class="container">
+            <div class="flex justify-between items-center md:py-8 py-4">
+                <h3 class="text-primaryColor md:text-2.5xl text-lg leading-32 font-Helvetical font-normal">
+                    <a href="#" data-toggle="menu" onclick="toggleMenu(event, 'menu', 'navbar')">Menu</a>
+                </h3>
+                <a href="index.html"><img class="md:w-auto w-28"  src="assets/img/fav-icon.svg" alt=""></a>
+                <a class="text-primaryColor md:text-2.5xl text-lg leading-32 font-Helvetical font-normal" href="#">Instagram</a>
+            </div>
+            <hr class="bg-primaryColor w-full h-0.5"/>
+        </div>
+    </header>
+    <!-- Header Area End Here -->
+
+
+    <!-- Menu Area Start Here -->
+    <section id="menu" class="bg-primaryColor w-full fixed top-0 left-0 h-full -translate-y-full transition-transform duration-700">
+        <div class="container">
+            <div class="py-2 xl:px-0 px-4">
+                <div class="flex justify-between items-center pt-7">
+                    <button class="text-white md:text-2.5xl text-lg leading-32 font-Helvetical font-normal" data-toggle="menu" onclick="toggleMenu(event, 'menu', 'navbar')">Close</button>
+                    <a class="text-white md:text-2.5xl text-lg leading-32 font-Helvetical font-normal" href="#" onclick="event.preventDefault()">Instagram</a>
+                </div>
+                <div class="xl:mt-16 mt-7">
+                    <a href="#" data-toggle="menu" onclick="toggleMenu(event, 'menu', 'navbar')"><img  class="md:w-auto w-40 mx-auto" src="assets/img/menu-logo.png" alt=""></a>
+                </div>
+                <div class="lg:w-980 w-full mx-auto">
+                    <ul id="menu" class="flex md:flex-row flex-col lg:gap-12 md:gap-10 gap-2 items-center md:mt-20 mt-10 justify-center">
+                        <li class="relative w-max">
+                            <button  onclick="location.href='about.html';" id="about-link" class="menu-item lg:text-5xl md:text-4xl text-3xl font-Helvetical font-normal text-white leading-40 hover:text-muted">About Us</button>
+                            <span class="underline absolute -bottom-1 left-0 w-0 transition-all duration-500 h-0.5 bg-white"></span>
+                        </li>
+                        <li class="relative w-max">
+                            <button  onclick="location.href='services.html';" id="services-link" class="menu-item lg:text-5xl md:text-4xl text-3xl font-Helvetical font-normal text-white leading-40 hover:text-muted">Services</button>
+                            <span class="underline absolute -bottom-1 left-0 w-0 transition-all duration-500 h-0.5 bg-white"></span>
+                        </li>
+                        <li class="relative w-max">
+                            <button  onclick="location.href='work.html';" id="work-link" class="menu-item lg:text-5xl md:text-4xl text-3xl font-Helvetical font-normal text-white leading-40 hover:text-muted">Work<sup class="relative md:text-lg text-sm leading-5 -top-5 md:-right-2">19</sup></button>
+                            <span class="underline absolute -bottom-1 left-0 w-0 transition-all duration-500 h-0.5 bg-white"></span>
+                        </li>
+                        <li class="relative w-max">
+                            <button  onclick="location.href='blog.html';" id="blog-link" class="menu-item lg:text-5xl md:text-4xl text-3xl font-Helvetical font-normal text-white leading-40 hover:text-muted">Blog<sup class="relative md:text-lg text-sm leading-5 -top-5 md:-right-2">24</sup></button>
+                            <span class="underline absolute left-0 w-0 transition-all duration-500 h-0.5 bg-white z-10"></span>
+                        </li>
+                        <li class="relative w-max">
+                            <button  onclick="location.href='contact.html';" id="contact-link" class="menu-item lg:text-5xl md:text-4xl text-3xl font-Helvetical font-normal text-white leading-40 hover:text-muted">Contact</button>
+                            <span class="underline absolute -bottom-1 left-0 w-0 transition-all duration-500 h-0.5 bg-white"></span>
+                        </li>
+                    </ul>
+                </div>  
+                <div class="absolute bottom-0 left-1/2 w-full xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md px-4 flex md:flex-row flex-col justify-between items-center py-4 transform -translate-x-1/2">
+                    <p class="text-base leading-7 text-white font-Helvetical font-normal">&copy; 2024 Company All Rights Reserved</p>
+                    <div class="flex gap-5 md:mt-0 mt-2">
+                        <a href="#" class="text-base leading-7 text-white font-Helvetical font-normal">Terms & Conditions</a>
+                        <a href="#" class="text-base leading-7 text-white font-Helvetical font-normal">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menu Area End Here -->
+
+    <!-- Mystic Area Start Here -->
+    <section class="md:mt-44 mt-20">
+        <div class="container xl:px-0 px-4">
+            <div>
+                <h3 class="font-Helvetical font-normal md:text-90xl text-[48px] md:leading-90 leading-58 text-primaryColor">Mystic Moments</h3>
+            </div>
+        </div>
+        <div class="lg:mt-20 mt-7">
+            <img class="w-full" src="assets/img/workDetails/image.png" alt="">
+        </div>
+    </section>
+    <!-- Mystic Area End Here -->
+
+    <!-- Project Area Start Here -->
+    <section class="md:mt-20 mt-10">
+        <div class="container">
+            <div class="flex lg:flex-row flex-col justify-between xl:px-0 px-4">
+                <span class="font-PTSerif font-normal italic text-base leading-7 text-primaryColor">About the project</span>
+                <div class="md:w-740 w-full lg:mt-0 mt-7">
+                    <p class="font-Helvetical font-normal lg:text-6xl text-5xl lg:leading-60 leading-48 text-primaryColor">Photography is driven by a deep passion for capturing life's most precious moments with artistry and a touch of magic</p>
+                    <hr class="my-8 border border-primaryColor"/>
+                    <div class="flex justify-between">
+                        <h4 class="font-PTSerif font-normal text-primaryColor text-lg leading-30 italic">Year<span class="block font-Helvetical text-2.5xl leading-32 not-italic">2024</span></h4>
+                        <h4 class="font-PTSerif font-normal text-primaryColor text-lg leading-30 italic">Category<span class="block font-Helvetical text-2.5xl leading-32 not-italic">Fashion</span></h4>
+                        <h4 class="font-PTSerif font-normal text-primaryColor text-lg leading-30 italic">Type<span class="block font-Helvetical text-2.5xl leading-32 not-italic">Commercial</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project Area End Here -->
+
+    <!-- Image Area Start Here -->
+    <section class="lg:mt-60 mt-20 xl:px-0 px-4">
+        <div class="container">
+            <div class="flex md:flex-row flex-col xl:gap-28 gap-10 items-start">
+                <img class="xl:w-[440px] lg:w-1/2 md:w-[47%] w-full xl:-mt-24 lg:-mt-40 -mt-4" src="assets/img/workDetails/image-1.png" alt="">
+                <img class="xl:w-740 lg:w-1/2 md:w-[47%] w-full" src="assets/img/workDetails/image-2.png" alt="">
+            </div>
+            <div class="flex md:flex-row flex-col xl:gap-28 gap-10 items-start lg:mt-20 mt-12">
+                <img class="xl:w-740 lg:w-1/2 md:w-[47%] w-full" src="assets/img/workDetails/image-3.png" alt="">
+                <img class="xl:w-[440px] lg:w-1/2 md:w-[47%] w-full xl:mt-64 lg:mt-20 " src="assets/img/workDetails/image-4.png" alt="">
+            </div>
+            <div class="flex md:flex-row flex-col xl:gap-28 gap-10 items-start lg:mt-40 mt-16">
+                <img class="xl:w-[440px] lg:w-1/2 md:w-[47%] w-full md:-mt-24 -mt-8" src="assets/img/workDetails/image-5.png" alt="">
+                <img class="xl:w-740 lg:w-1/2 md:w-[47%] w-full" src="assets/img/workDetails/image-10.png" alt="">
+            </div>
+            <div class="md:mt-20 mt-7">
+                <img src="assets/img/workDetails/image-6.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Image Area End Here -->
+
+     <!-- Working Area Start Here -->
+     <section class="xl:mt-200 md:mt-28 mt-10 xl:px-0 px-4">
+        <div class="container">
+            <div class="md:w-565 w-full mx-auto">
+                <h1 class="text-center font-Helvetical font-normal lg:text-90xl text-54xl lg:leading-90 leading-58 text-primaryColor">Releted<span class="font-PTSerif italic"> Works</span></h1>
+            </div>
+            <div class="flex lg:flex-row flex-col justify-between items-center xl:gap-28 gap-10 mt-10">
+                <div class="lg:w-330 w-full xl:pt-[25%] pt-10">
+                    <a href="work.html">
+                        <div class="flex justify-between">
+                            <h4 class="text-primaryColor font-Helvetical text-xl leading-30">David’s Night Show</h4>
+                            <p class="text-primaryColor text-base leading-7 font-normal font-Helvetical">
+                                Photography<span class="block">13 August, 2024</span>
+                            </p>
+                        </div>
+                        <div class="group overflow-hidden mt-8">
+                            <img class="w-full transition-transform duration-700 group-hover:scale-105" src="assets/img/workDetails/image-7.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="lg:w-550 w-full">
+                    <a href="work.html">
+                        <div class="flex justify-between">
+                            <h4 class="text-primaryColor font-Helvetical text-4xl leading-40">Lisa’s Fashion</h4>
+                            <p class="text-primaryColor text-base leading-7 font-normal font-Helvetical">
+                                Photography<span class="block">13 August, 2024</span>
+                            </p>
+                        </div>
+                        <div class="group overflow-hidden mt-8">
+                            <img class="w-full transition-transform duration-700 group-hover:scale-105 group-hover:rotate-3" src="assets/img/workDetails/image-8.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="lg:w-190 w-full">
+                    <a href="work.html">
+                        <div class="flex justify-between items-end">
+                            <p class="text-primaryColor text-sm leading-6 font-normal font-Helvetical">
+                                Whispering Light<span class="block text-xs">Photography</span>
+                            </p>
+                            <h4 class="text-primaryColor font-Helvetical text-xs leading-5">13 Aug, 2024</h4>
+                        </div>
+                        <div class="group overflow-hidden mt-4">
+                            <img class="w-full transition-transform duration-700 group-hover:scale-105 group-hover:rotate-3" src="assets/img/workDetails/image-9.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Working Area Start Here -->
+
+
+    <!-- Footer Area Start Here -->
+    <section class="xl:mt-200 md:mt-20 mt-10">
+        <div class="grid lg:grid-cols-2 grid-cols-1 h-720">
+            <div class="bg-primaryColor md:pt-16 pt-7 px-8 pb-7 lg:order-1 order-2 relative">
+                <p class="xl:hidden lg:block md:hidden block text-base leading-7 text-white font-Helvetical font-normal">By Appointment Only
+                    <span class="block">123 Lorem Ipsum Road New York, NA 12304</span>
+                </p>
+                <div class="flex justify-between xl:mt-0 lg:mt-5 md:mt-0 mt-5">
+                    <ul class="">
+                        <li><a href="about.html" class="block text-base leading-7 text-white font-Helvetical font-normal">About</a></li>
+                        <li><a href="services.html" class="block lg:pt-4 text-base leading-7 text-white font-Helvetical font-normal">Services</a></li>
+                        <li><a href="work.html" class="block lg:pt-4 text-base leading-7 text-white font-Helvetical font-normal">Works</a></li>
+                        <li><a href="blog.html" class="block lg:pt-4 text-base leading-7 text-white font-Helvetical font-normal">Blog</a></li>
+                        <li><a href="contact.html" class="block lg:pt-4 text-base leading-7 text-white font-Helvetical font-normal">Contact</a></li>
+                    </ul>
+                    <p class="xl:block lg:hidden md:block hidden text-base leading-7 text-white font-Helvetical font-normal">By Appointment Only
+                        <span class="block">123 Lorem Ipsum Road New York, NA 12304</span>
+                    </p>
+                    <ul class="">
+                        <li><a href="facebook.com" class="block text-base leading-7 text-white font-Helvetical font-normal">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/" class="block lg:pt-4 text-base leading-7 text-white font-Helvetical font-normal">Instagram</a></li>
+                        <li><a href="https://x.com/?lang=en" class="block lg:pt-4 text-base leading-7 text-white font-Helvetical font-normal">X (Twitter)</a></li>
+                        <li><a href="https://www.linkedin.com" class="block lg:pt-4 text-base leading-7 text-white font-Helvetical font-normal">LinkedIn </a></li>
+                    </ul>
+                </div>
+                <!-- Adjusted copyright section -->
+                <div class="lg:absolute lg:inset-x-0 lg:bottom-5 flex xl:flex-row lg:flex-col flex-col md:flex-row items-center justify-between lg:px-8 lg:mt-0 mt-20">
+                    <p class="text-base leading-7 text-white font-Helvetical font-normal">&copy; 2024 Company All Rights Reserved</p>
+                    <div class="flex gap-5 mt-5 md:mt-0">
+                        <a href="#" class="text-base leading-7 text-white font-Helvetical font-normal">Terms & Conditions</a>
+                        <a href="#" class="text-base leading-7 text-white font-Helvetical font-normal">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-footerBg p-8 lg:order-2 order-1 relative">
+                <div class="lg:hidden block">
+                    <img class="lg:mt-[490px]" src="assets/img/logo.svg" alt="">
+                </div>
+                <div class="flex justify-between lg:mt-0 mt-14">
+                    <a href="#" class="text-primaryColor font-normal font-Helvetical text-base leading-7">+1 202 992-6509</a>
+                    <a href="#" class="text-primaryColor font-normal font-Helvetical text-base leading-7">dummyemail@gmail.com</a>
+                </div>
+                <div class="lg:absolute lg:inset-x-0 bottom-5 md:flex justify-center lg:block hidden">
+                    <img class="mt-14 w-full mx-auto px-10" src="assets/img/logo.svg" alt="Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Area End Here -->
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom font setup */
+@font-face {
+    font-family: 'Helvetica Now Display';
+    src: url('/assets/fonts/HelveticaNowDisplay-Regular.ttf') format('OpenType');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Helvetica Now Display';
+    src: url('/assets/fonts/HelveticaNowDisplay-Medium.ttf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Helvetica Now Display';
+    src: url('/assets/fonts/HelveticaNowDisplay-Bold.ttf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+  } 
+  @font-face {
+      font-family: 'Helvetica Now Display';
+      src: url('/assets/fonts/HelveticaNowDisplay-ExtraBold.ttf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    } 
+
+
+
+   
+      /* Ensure header is above the main content */
+      #navigation {
+          z-index: 50; /* Make sure the header is above the content */
+          transition: transform 0.3s ease-in-out; /* Smooth transition for hiding/showing */
+      }
+      
+      /* Main Menu visibility and transition */
+      #mainMenu {
+          z-index: 40; /* Ensure the menu is below the header but above other content */
+          transition: transform 0.7s ease-in-out; /* Smooth transition for sliding in/out */
+      }
+    
+      /* Hide the menu initially */
+      #mainMenu.-translate-y-full {
+          transform: translateY(-100%);
+      }
+    
+      /* Show the menu */
+      #mainMenu.translate-y-0 {
+          transform: translateY(0);
+      }
+    
+      /* Hide the header */
+      #navigation.translate-y-full {
+          transform: translateY(-100%);
+      }
+
+
+
+            /* Ensure header is above the main content */
+      #navbar {
+        z-index: 50; /* Make sure the header is above the content */
+        transition: transform 0.3s ease-in-out; /* Smooth transition for hiding/showing */
+      }
+
+      /* Main Menu visibility and transition */
+      #menu {
+        z-index: 40; /* Ensure the menu is below the header but above other content */
+        transition: transform 0.7s ease-in-out; /* Smooth transition for sliding in/out */
+      }
+
+      /* Hide the menu initially */
+      #menu.-translate-y-full {
+        transform: translateY(-100%);
+      }
+
+      /* Show the menu */
+      #menu.translate-y-0 {
+        transform: translateY(0);
+      }
+
+      /* Hide the header */
+      #navbar.translate-y-full {
+        transform: translateY(-100%);
+      }
+
+
+      /* Ensure <hr> is below the menu */
+      hr {
+        z-index: 30; /* Ensure hr is below the menu and header */
+        position: relative; /* Ensure it respects z-index stacking */
+      }
+
+      /* Optional: Add spacing to avoid overlap */
+      hr {
+        margin-top: 0; /* Adjust this value as needed */
+      }
+
+
+      .menu-item {
+        position: relative;
+        color: #ffffff; /* Default text color */
+        transition: color 0.3s ease;
+    }
+    
+    .menu-item::before {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        transition: transform 0.3s ease;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+    }
+    
+    .menu-item:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    
+    .menu-item.active {
+        color: white; /* Active text color */
+    }
+    
+    .menu-item.inactive {
+        color: #ffffffd4; /* Adjust to your muted color */
+    }
+    
+    .menu-item:hover,
+    .menu-item:hover::before {
+        color: white; /* Ensure text color is white on hover */
+    }
+    
+    

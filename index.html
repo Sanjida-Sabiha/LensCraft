@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="assets/img/fav-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main Title -->
+    <title>Lens Craft</title>
+    <!-- Main CSS -->
+     <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-mainBg">
+    <!-- Menu Area Start Here -->
+<section id="mainMenu" class="bg-primaryColor w-full h-full fixed top-0 left-0 -translate-y-full transition-transform duration-700 overflow-hidden">
+    <div class="container h-full flex flex-col justify-between">
+        <div>
+            <div class="py-2 xl:px-0 px-4">
+                <div class="flex justify-between items-center pt-7">
+                    <button class="text-white md:text-2.5xl text-lg leading-32 font-Helvetical font-normal" data-toggle="main-menu" onclick="toggleMenu(event, 'mainMenu', 'navigation')">Close</button>
+                    <a class="text-white md:text-2.5xl text-lg leading-32 font-Helvetical font-normal" href="#" onclick="event.preventDefault()">Instagram</a>
+                </div>
+                <div class="xl:mt-16 mt-7">
+                    <a href="#" data-toggle="main-menu" onclick="toggleMenu(event, 'mainMenu', 'navigation')"><img class="md:w-auto w-40 mx-auto" src="assets/img/menu-logo.png" alt=""></a>
+                </div>
+                <div class="lg:w-980 w-full mx-auto">
+                    <ul id="menu" class="flex md:flex-row flex-col lg:gap-12 md:gap-10 gap-2 items-center md:mt-20 mt-10 justify-center">
+                        <li class="relative w-max">
+                            <button  onclick="location.href='about.html';" id="about-link" class="menu-item lg:text-5xl md:text-4xl text-3xl font-Helvetical font-normal text-white leading-40 hover:text-muted">About Us</button>
+                            <span class="underline absolute -bottom-1 left-0 w-0 transition-all duration-500 h-0.5 bg-white"></span>
+                        </li>
+                        <li class="relative w-max">
+                            <button  onclick="location.href='services.html';" id="services-link" class="menu-item lg:text-5xl md:text-4xl text-3xl font-Helvetical font-normal text-white leading-40 hover:text-muted">Services</button>
+                            <span class="underline absolute -bottom-1 left-0 w-0 transition-all duration-500 h-0.5 bg-white"></span>
+                        </li>
+                        <li class="relative w-max">
+                            <button  onclick="location.href='work.html';" id="work-link" class="menu-item lg:text-5xl md:text-4xl text-3xl font-Helvetical font-normal text-white leading-40 hover:text-muted">Work<sup class="relative md:text-lg text-sm leading-5 -top-5 md:-right-2">19</sup></button>
+                            <span class="underline absolute -bottom-1 left-0 w-0 transition-all duration-500 h-0.5 bg-white"></span>
+                        </li>
+                        <li class="relative w-max">
+                            <button  onclick="location.href='blog.html';" id="blog-link" class="menu-item lg:text-5xl md:text-4xl text-3xl font-Helvetical font-normal text-white leading-40 hover:text-muted">Blog<sup class="relative md:text-lg text-sm leading-5 -top-5 md:-right-2">24</sup></button>
+                            <span class="underline absolute left-0 w-0 transition-all duration-500 h-0.5 bg-white z-10"></span>
+                        </li>
+                        <li class="relative w-max">
+                            <button  onclick="location.href='contact.html';" id="contact-link" class="menu-item lg:text-5xl md:text-4xl text-3xl font-Helvetical font-normal text-white leading-40 hover:text-muted">Contact</button>
+                            <span class="underline absolute -bottom-1 left-0 w-0 transition-all duration-500 h-0.5 bg-white"></span>
+                        </li>
+                    </ul>
+                </div>                                             
+                <div class="absolute bottom-0 left-1/2 w-full xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md px-4 flex md:flex-row flex-col justify-between items-center py-4 transform -translate-x-1/2">
+                    <p class="text-base leading-7 text-white font-Helvetical font-normal">&copy; 2024 Company All Rights Reserved</p>
+                    <div class="flex gap-5 md:mt-0 mt-2">
+                        <a href="#" class="text-base leading-7 text-white font-Helvetical font-normal">Terms & Conditions</a>
+                        <a href="#" class="text-base leading-7 text-white font-Helvetical font-normal">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Menu Area End Here -->
+
+
+    <!-- Scroll Header Area Start Here -->
+    <header id="navigation" class="fixed top-0 w-full z-50 transition-all duration-300 bg-mainBg xl:px-0 px-4">
+        <div class="container">
+            <div class="flex justify-between items-center md:py-8 py-4">
+                    <h3 class="text-primaryColor md:text-2.5xl text-lg leading-32 font-Helvetical font-normal">
+                    <a href="#" data-toggle="main-menu" onclick="toggleMenu(event, 'mainMenu', 'navigation')">Menu</a>
+                </h3>
+                <a href="index.html"><img class="md:w-auto w-28" src="assets/img/fav-icon.svg" alt=""></a>
+                <a class="text-primaryColor md:text-2.5xl text-lg leading-32 font-Helvetical font-normal" href="#" onclick="event.preventDefault()">Instagram</a>
+            </div>
+            <hr class="bg-primaryColor w-full h-0.5"/>
+        </div>
+    </header>
+    <!-- Scroll Header Area End Here -->
+
+    <!-- Header Area Start Here -->
+    <div class="xl:px-0 px-4">
+        <div class="container">
+            <div class="">
+                <div class="flex justify-between items-center md:py-10 py-7">
+                    <h3 class="text-primaryColor md:text-2.5xl text-lg leading-32 font-Helvetical font-normal"><a href="#" data-toggle="main-menu" onclick="toggleMenu(event, 'mainMenu', 'navigation')">Menu</a></h3>
+                    <p class="text-primaryColor md:text-2.5xl text-lg leading-32 font-Helvetical font-normal md:block hidden">Capturing Moments, Creating Memories</p>
+                    <a class="text-primaryColor md:text-2.5xl text-lg leading-32 font-Helvetical font-normal" href="#"  onclick="event.preventDefault()">Instagram</a>
+                </div>
+                <div>
+                    <img src="assets/img/logo.svg" alt="">
+                    <p class="text-primaryColor md:text-2.5xl text-lg leading-32 font-Helvetical font-normal text-center pt-3 md:hidden block">Capturing Moments, Creating Memories</p>
+                </div>
+                <hr class="bg-primaryColor w-full h-0.5 md:my-10 my-7"/>
+
+                <div class="w-513 mx-auto hidden md:block" x-data="{ open: false }">
+                    <ul class="flex gap-10 items-center">
+                        <li class="group relative w-max">
+                            <a class="text-lg font-PTSerif italic text-primaryColor leading-30" href="#">Home</a>
+                            <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-0.5 bg-primaryColor group-hover:w-full"></span>
+                        </li>
+                        <li class="group relative w-max">
+                            <a class="text-lg font-PTSerif italic text-primaryColor leading-30" href="about.html">About Us</a>
+                            <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-0.5 bg-primaryColor group-hover:w-full"></span>
+                        </li>
+                        <li class="group relative w-max">
+                            <a class="text-lg font-PTSerif italic text-primaryColor leading-30" href="services.html">Services</a>
+                            <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-0.5 bg-primaryColor group-hover:w-full"></span>
+                        </li>
+                        <li class="group relative w-max">
+                            <a class="text-lg font-PTSerif italic text-primaryColor leading-30" href="work.html">Work</a>
+                            <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-0.5 bg-primaryColor group-hover:w-full"></span>
+                        </li>
+                        <li class="group relative w-max">
+                            <a class="text-lg font-PTSerif italic text-primaryColor leading-30" href="blog.html">Blog</a>
+                            <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-0.5 bg-primaryColor group-hover:w-full"></span>
+                        </li>
+                        <li class="group relative w-max">
+                            <a class="text-lg font-PTSerif italic text-primaryColor leading-30" href="contact.html">Contact</a>
+                            <span class="absolute -bottom-1 left-0 w-0 transition-all duration-500 h-0.5 bg-primaryColor group-hover:w-full"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div x-data="{ open: false }" class="md:hidden border border-primaryColor rounded-3xl">
+                <!-- Toggle Button -->
+                <button @click="open = !open" class=" text-primaryColor focus:outline-none w-full flex justify-center items-center">
+                    <span x-show="!open" x-cloak class="py-2 text-center w-full font-Helvetical font-normal text-lg leading-7"><span class="font-PTSerif italic">Filters</span> Menu</span>
+                    <span x-show="open" x-cloak class="py-2 text-center w-full font-Helvetical font-normal text-lg leading-7">Close<span class="font-PTSerif italic"> Filters</span></span>
+                </button>
+
+                <!-- Mobile Menu -->
+                <div x-show="open" 
+                    x-transition:enter="transition ease-out duration-500"
+                    x-transition:enter-start="opacity-0 transform -translate-y-2"
+                    x-transition:enter-end="opacity-100 transform translate-y-0"
+                    x-transition:leave="transition ease-in duration-500"
+                    x-transition:leave-start="opacity-100 transform translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-2"
+                    class="space-y-4">
+                    <ul>
+                        <li class="group relative border-t border-t-primaryColor w-full py-2 hover:bg-primaryColor">
+                            <a class="text-lg font-PTSerif italic text-primaryColor leading-30 px-4 group-hover:text-white" href="#">Home</a>
+                        </li>
+                        <li class="group relative  border-t border-t-primaryColor w-full py-2 hover:bg-primaryColor">
+                            <a class="text-lg font-PTSerif italic text-primaryColor leading-30 px-4 group-hover:text-white" href="about.html">About Us</a>
+                        </li>
+                        <li class="group relative  border-t border-t-primaryColor w-full py-2 hover:bg-primaryColor">
+                            <a class="text-lg font-PTSerif italic text-primaryColor leading-30 px-4 group-hover:text-white" href="services.html">Services</a>
+                        </li>
+                        <li class="group relative border-t border-t-primaryColor w-full py-2 hover:bg-primaryColor">
+                            <a class="text-lg font-PTSerif italic text-primaryColor leading-30 px-4 group-hover:text-white" href="work.html">Work</a>
+                        </li>
+                        <li class="group relative border-t border-t-primaryColor w-full py-2 hover:bg-primaryColor">
+                            <a class="text-lg font-PTSerif italic text-primaryColor leading-30 px-4 group-hover:text-white" href="blog.html">Blog</a>
+                        </li>
+                        <li class="group relative border-t border-t-primaryColor w-full py-2 hover:bg-primaryColor hover:rounded-b-3xl">
+                            <a class="text-lg font-PTSerif italic text-primaryColor leading-30 px-4 group-hover:text-white" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex lg:flex-row flex-col justify-between gap-7 lg:mt-16 mt-7 items-start">
+                <div class="flex md:flex-row flex-col-reverse items-center gap-7 lg:mt-36 mt-7">
+                    <div class="lg:w-190 md:w-330 w-full">
+                        <p class="text-center font-Helvetical font-medium text-3.5xl leading-36 text-primaryColor">Expert Photography Services Tailored to Your Unique Story</p>
+                        <div class="text-center">
+                            <button  onclick="event.preventDefault()" class="md:mt-8 mt-3 group relative min-h-14 md:w-32 w-full rounded-100 overflow-hidden border border-primaryColor bg-transparent text-primaryColor transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primaryColor before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primaryColor after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                                <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primaryColor before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primaryColor after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                                <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center text-base font-normal font-PTSerif italic justify-center group-hover:text-white">Let’s Talk</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="group overflow-hidden">
+                        <img class="md:w-410 w-full transition-transform duration-700 group-hover:scale-110 group-hover:rotate-2" src="assets/img/homePage/image.png" alt="">
+                    </div>
+                    
+                </div>
+                <div class="flex md:flex-row flex-col items-center gap-7">
+                    <div class="group overflow-hidden">
+                        <img class="w-410 transition-transform duration-700 group-hover:scale-105" src="assets/img/homePage/image-1.png" alt="">
+                    </div>
+                    <div class="lg:w-190 w-330">
+                        <img class="mx-auto" src="assets/img/line.svg" alt="">
+                        <p class="text-center font-Helvetical font-normal text-base leading-7 text-primaryColor md:pt-8 pt-2">“LensCraft did an incredible job capturing our wedding day. Every photo was more beautiful than the last!” </p>
+                        <p class="text-center font-PTSerif font-normal italic text-base leading-7 text-primaryColor md:pt-8 pt-2">– Ben Stokes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Area End Here -->
+
+    <!-- About Area Start Here -->
+     <section class="xl:mt-200 md:mt-28 mt-10 xl:px-0 px-4">
+        <div class="container">
+            <div class="flex lg:flex-row flex-col justify-between items-start xl:gap-0 lg:gap-10 gap-5">
+                <div class="lg:w-410 w-full">
+                    <span class="font-PTSerif font-normal italic text-base leading-7 text-primaryColor">About us</span>
+                    <p class="xl:pt-[9.5rem] lg:pt-[4.5rem] pt-4 font-Helvetical font-normal text-lg leading-30 text-primaryColor">We believe every moment tells a story. With a passion for creativity and a dedication to quality, our team of professional photographers specializes in capturing the essence of your most cherished memories. We’re here to provide best!</p>
+                </div>
+                <div class="lg:w-740 w-full">
+                    <p class="font-Helvetical font-normal xl:text-6xl md:text-5xl text-2xl xl:leading-60 md:leading-48 leading-34 text-primaryColor"><span class="font-PTSerif italic">Photography </span> is driven by a deep passion for <span class="font-PTSerif italic">capturing life's </span> most <span class="font-PTSerif italic">precious moments </span> with artistry and a touch of magic</p>
+                    <button class="md:mt-10 mt-7 group relative min-h-12 md:w-36 w-full rounded-100 overflow-hidden border border-primaryColor bg-transparent text-primaryColor transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primaryColor before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primaryColor after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                        <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primaryColor before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primaryColor after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                        <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center text-base font-normal font-PTSerif italic justify-center group-hover:text-white">Learn More</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- About Area End Here -->
+
+    <!-- Working Area Start Here -->
+     <section class="xl:mt-200 md:mt-28 mt-10 xl:px-0 px-4">
+        <div class="container">
+            <div class="md:w-565 w-full mx-auto">
+                <h1 class="text-center font-Helvetical font-normal lg:text-90xl text-54xl lg:leading-90 leading-58 text-primaryColor">Recent<span class="font-PTSerif italic"> Works</span></h1>
+                <div class="lg:mt-20 mt-10">
+                    <a href="work-details.html">
+                        <div class="flex justify-between">
+                            <h4 class="text-primaryColor font-Helvetical text-4xl leading-40">Silent Shadows</h4>
+                            <p class="text-primaryColor text-base leading-7 font-normal font-Helvetical">
+                                Photography<span class="block">13 August, 2024</span>
+                            </p>
+                        </div>
+                        <div class="group overflow-hidden mt-8">
+                            <img class="transition-transform duration-700 group-hover:scale-110 group-hover:rotate-2" src="assets/img/homePage/image-2.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex lg:flex-row flex-col justify-between items-center xl:gap-28 gap-10 mt-10">
+                <div class="lg:w-330 w-full xl:pt-[25%] pt-10">
+                    <a href="work-details.html">
+                        <div class="flex items-center lg:justify-between lg:gap-0 gap-14">
+                            <h4 class="text-primaryColor font-Helvetical text-xl leading-30">David’s Night Show</h4>
+                            <p class="text-primaryColor text-base leading-7 font-normal font-Helvetical">
+                                Photography<span class="block">13 August, 2024</span>
+                            </p>
+                        </div>
+                        <div class="group overflow-hidden mt-8">
+                            <img class="transition-transform duration-700 group-hover:scale-105" src="assets/img/homePage/image-3.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="lg:w-550 w-full">
+                    <a href="work-details.html">
+                        <div class="flex justify-between">
+                            <h4 class="text-primaryColor font-Helvetical text-4xl leading-40">Lisa’s Fashion</h4>
+                            <p class="text-primaryColor text-base leading-7 font-normal font-Helvetical">
+                                Photography<span class="block">13 August, 2024</span>
+                            </p>
+                        </div>
+                        <div class="group overflow-hidden mt-8">
+                            <img class="lg:w-auto w-full transition-transform duration-700 group-hover:scale-105 group-hover:rotate-3" src="assets/img/homePage/image-4.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="lg:w-190 w-full">
+                    <a href="work-details.html">
+                        <div>
+                            <p class="text-primaryColor text-sm leading-6 font-normal font-Helvetical">
+                                Whispering Light
+                            </p>
+                            <div class="flex items-center lg:justify-between lg:gap-0 gap-14">
+                                <span class="text-primaryColor text-xs font-normal font-Helvetical">Photography</span>
+                                <h4 class="text-primaryColor font-Helvetical text-xs leading-5">13 Aug, 2024</h4>
+                            </div>
+                        </div>
+                        <div class="group overflow-hidden mt-4">
+                            <img class="transition-transform duration-700 group-hover:scale-105" src="assets/img/homePage/image-5.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="lg:w-980 w-full mx-auto flex lg:flex-row flex-col justify-center items-center md:gap-28 gap-10">
+                <div class="md:w-190 w-full md:mt-0 mt-7">
+                    <a href="work-details.html">
+                        <div>
+                            <p class="text-primaryColor text-sm leading-6 font-normal font-Helvetical">
+                                Lana’s Fashion</p>
+                            <div class="flex items-center lg:justify-between lg:gap-0 gap-14">
+                                <span class="text-primaryColor text-xs font-normal font-Helvetical">Photography</span>
+                                <h4 class="text-primaryColor font-Helvetical text-xs leading-5">13 Aug, 2024</h4>
+                            </div>
+                        </div>
+                        <div class="group overflow-hidden mt-4">
+                            <img class="transition-transform duration-700 group-hover:scale-105" src="assets/img/homePage/image-6.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="md:w-550 w-full">
+                    <a href="work-details.html">
+                        <div class="flex justify-between">
+                            <h4 class="text-primaryColor font-Helvetical text-4xl leading-40">Mystic Moments</h4>
+                            <p class="text-primaryColor text-base leading-7 font-normal font-Helvetical">
+                                Photography<span class="block">13 August, 2024</span>
+                            </p>
+                        </div>
+                        <div class="group overflow-hidden mt-8">
+                            <img class="transition-transform duration-700 group-hover:scale-105 group-hover:rotate-3" src="assets/img/homePage/image-7.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Working Area Start Here -->
+
+    <!-- Occasion Area Start Here -->
+    <section class="xl:mt-200 md:mt-28 mt-10 xl:px-0 px-4">
+        <div class="container">
+            <div class="flex lg:flex-row flex-col-reverse justify-between xl:gap-20 gap-10">
+                <div class="group overflow-hidden">
+                    <img class="lg:w-auto w-full transition-transform duration-700 group-hover:scale-105 group-hover:rotate-3" src="assets/img/homePage/image-8.png" alt="">
+                </div>
+                <div class="md:w-570 w-full">
+                    <h3 class="font-Helvetical font-normal text-primaryColor md:text-6xl text-36xl md:leading-60 leading-44"><span class="font-PTSerif italic">Creative</span> Photography for Every <span class="font-PTSerif italic">Occasion</span></h3>
+                    <ul class="md:mt-11 mt-7">
+                        <li class="text-primaryColor text-xl leading-30 font-Helvetical font-normal"><span class="font-PTSerif italic">1.</span> Brand Photography</li>
+                        <li class="text-primaryColor text-xl leading-30 font-Helvetical font-normal pt-3.5"><span class="font-PTSerif italic">2.</span> Headshots</li>
+                        <li class="text-primaryColor text-xl leading-30 font-Helvetical font-normal pt-3.5"><span class="font-PTSerif italic">3.</span> Editorial Photography</li>
+                        <li class="text-primaryColor text-xl leading-30 font-Helvetical font-normal pt-3.5"><span class="font-PTSerif italic">4.</span> Wedding Photography</li>
+                    </ul>
+                    <div class="flex md:flex-row flex-col justify-between md:items-center xl:mt-36 md:mt-16 mt-7">
+                        <p class="w-287 text-primaryColor font-Helvetical font-normal text-base leading-7">Each of our services is designed to meet the diverse needs of our clients.</p>
+                        <button  onclick="location.href='contact.html';" class="md:mt-0 mt-7 group relative min-h-14 md:w-32 w-full rounded-100 overflow-hidden border border-primaryColor bg-transparent text-primaryColor transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primaryColor before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primaryColor after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                            <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primaryColor before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primaryColor after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                            <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center text-base font-normal font-PTSerif italic justify-center group-hover:text-white">Let’s Talk</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Occasion Area End Here -->
+
+    <!-- Workflow Area Start Here -->
+    <section class="xl:mt-200 md:mt-28 mt-10 xl:px-0 px-4">
+        <div class="container">
+            <div>
+                <h1 class="text-center font-Helvetical font-normal lg:text-90xl text-5.5xl lg:leading-90 leading-58 text-primaryColor"><span class="font-PTSerif italic">Workflow </span>Process</h1>
+            </div>
+            <div class="lg:mt-20 mt-7 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+                <div class="xl:p-10 p-4 md:border-0 border border-primaryColor rounded-3xl">
+                    <img class="md:w-auto w-[20%]" src="assets/img/homePage/Chat.svg" alt="">
+                    <ul class="md:mt-8 mt-3">
+                        <li class="text-primaryColor text-xl leading-30 font-Helvetical font-normal"><span class="font-PTSerif italic mr-2 inline-block">1 </span> Consultation</li>
+                        <p class="text-primaryColor font-Helvetical font-normal text-base leading-7 pt-3.5">Understand the client's vision, requirements, and objectives for the photoshoot.</p>
+                    </ul>
+                </div>
+                <div class="xl:p-10 p-4 md:border-0 border border-primaryColor rounded-3xl md:mt-0 mt-7">
+                    <img class="md:w-auto w-[20%]" src="assets/img/homePage/Camera.svg" alt="">
+                    <ul class="md:mt-8 mt-3">
+                        <li class="text-primaryColor text-xl leading-30 font-Helvetical font-normal"><span class="font-PTSerif italic mr-2 inline-block">2 </span> Shoot</li>
+                        <p class="text-primaryColor font-Helvetical font-normal text-base leading-7 pt-3.5">Scout locations (if necessary) to assess lighting, backgrounds, and compositions.</p>
+                    </ul>
+                </div>
+                <div class="xl:p-10 p-4 md:border-0 border border-primaryColor rounded-3xl md:mt-0 mt-7">
+                    <img class="md:w-auto w-[20%]" src="assets/img/homePage/Delivery.svg" alt="">
+                    <ul class="md:mt-8 mt-3">
+                        <li class="text-primaryColor text-xl leading-30 font-Helvetical font-normal"><span class="font-PTSerif italic mr-2 inline-block">3 </span>Deliver</li>
+                        <p class="text-primaryColor font-Helvetical font-normal text-base leading-7 pt-3.5">Provide a secure and easy-to-access method for clients to download or receive their photos.</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Workflow Area End Here -->
+    
+    <!-- Contact Area Start Here -->
+     <section class="xl:mt-200 md:mt-20 mt-10 xl:px-0 px-4">
+        <div class="container">
+            <div class="flex lg:flex-row flex-col-reverse lg:gap-20 gap-7 justify-between items-center">
+                <div class="lg:w-570 w-full">
+                    <h3 class="font-Helvetical font-normal text-primaryColor text-6xl leading-60"><span class="font-PTSerif italic">Contact </span>us</h3>
+                    <div class="lg:mt-[75px] mt-10">
+                        <form>
+                            <div class="flex md:flex-row flex-col gap-7">
+                                <div>
+                                    <input class="lg:w-[270px] md:w-[353px] w-full focus:outline-none bg-transparent placeholder:text-primaryColor text-primaryColor font-normal font-Helvetical text-base leading-7" type="text" placeholder="Name">
+                                    <span class="w-full border-b border-b-primaryColor block mt-6"></span>
+                                </div>
+                                <div>
+                                    <input class="lg:w-[270px] md:w-[353px] w-full focus:outline-none bg-transparent placeholder:text-primaryColor text-primaryColor font-normal font-Helvetical text-base leading-7" type="email" placeholder="Email">
+                                    <span class="w-full border-b border-b-primaryColor block mt-6"></span>
+                                </div>
+                            </div>
+                            <div class="mt-12">
+                                <input class="w-full focus:outline-none bg-transparent placeholder:text-primaryColor text-primaryColor font-normal font-Helvetical text-base leading-7" type="text" placeholder="Subject">
+                                <span class="w-full border-b border-b-primaryColor block mt-6"></span>
+                            </div>
+                            <div class="mt-12">
+                                <textarea class="w-full focus:outline-none bg-transparent placeholder:text-primaryColor text-primaryColor font-normal font-Helvetical text-base leading-7 resize-none" placeholder="Message"></textarea>
+                                <span class="w-full border-b border-b-primaryColor block md:mt-24 mt-10"></span>
+                            </div>                            
+                            <button class="mt-12 group relative min-h-14 md:w-44 w-full rounded-100 overflow-hidden border border-primaryColor bg-transparent text-primaryColor transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-primaryColor before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-primaryColor after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                                <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-primaryColor before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-primaryColor after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
+                                <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center text-base font-normal font-PTSerif italic justify-center group-hover:text-white">Submit Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="lg:w-645 w-full">
+                    <div class="group overflow-hidden">
+                        <img class="lg:w-auto w-full transition-transform duration-700 group-hover:scale-105 group-hover:rotate-3" src="assets/img/homePage/image-9.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Contact Area End Here -->
+
+    <!-- Footer Area Start Here -->
+    <section class="xl:mt-200 md:mt-20 mt-10">
+        <div class="grid lg:grid-cols-2 grid-cols-1 h-720">
+            <div class="bg-primaryColor md:pt-16 pt-7 px-8 pb-7 lg:order-1 order-2 relative">
+                <p class="xl:hidden lg:block md:hidden block text-base leading-7 text-white font-Helvetical font-normal">By Appointment Only
+                    <span class="block">123 Lorem Ipsum Road New York, NA 12304</span>
+                </p>
+                <div class="flex justify-between xl:mt-0 lg:mt-5 md:mt-0 mt-5">
+                    <ul class="">
+                        <li><a href="about.html" class="block text-base leading-7 text-white font-Helvetical font-normal">About</a></li>
+                        <li><a href="services.html" class="block lg:pt-4 text-base leading-7 text-white font-Helvetical font-normal">Services</a></li>
+                        <li><a href="work.html" class="block lg:pt-4 text-base leading-7 text-white font-Helvetical font-normal">Works</a></li>
+                        <li><a href="blog.html" class="block lg:pt-4 text-base leading-7 text-white font-Helvetical font-normal">Blog</a></li>
+                        <li><a href="contact.html" class="block lg:pt-4 text-base leading-7 text-white font-Helvetical font-normal">Contact</a></li>
+                    </ul>
+                    <p class="xl:block lg:hidden md:block hidden text-base leading-7 text-white font-Helvetical font-normal">By Appointment Only
+                        <span class="block">123 Lorem Ipsum Road New York, NA 12304</span>
+                    </p>
+                    <ul class="">
+                        <li><a href="facebook.com" class="block text-base leading-7 text-white font-Helvetical font-normal">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/" class="block lg:pt-4 text-base leading-7 text-white font-Helvetical font-normal">Instagram</a></li>
+                        <li><a href="https://x.com/?lang=en" class="block lg:pt-4 text-base leading-7 text-white font-Helvetical font-normal">X (Twitter)</a></li>
+                        <li><a href="https://www.linkedin.com" class="block lg:pt-4 text-base leading-7 text-white font-Helvetical font-normal">LinkedIn </a></li>
+                    </ul>
+                </div>
+                <!-- Adjusted copyright section -->
+                <div class="lg:absolute lg:inset-x-0 lg:bottom-5 flex xl:flex-row lg:flex-col flex-col md:flex-row items-center justify-between lg:px-8 lg:mt-0 mt-20">
+                    <p class="text-base leading-7 text-white font-Helvetical font-normal">&copy; 2024 Company All Rights Reserved</p>
+                    <div class="flex gap-5 mt-5 md:mt-0">
+                        <a href="#" class="text-base leading-7 text-white font-Helvetical font-normal">Terms & Conditions</a>
+                        <a href="#" class="text-base leading-7 text-white font-Helvetical font-normal">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-footerBg p-8 lg:order-2 order-1 relative">
+                <div class="lg:hidden block">
+                    <img class="lg:mt-[490px]" src="assets/img/logo.svg" alt="">
+                </div>
+                <div class="flex justify-between lg:mt-0 mt-14">
+                    <a href="#" class="text-primaryColor font-normal font-Helvetical text-base leading-7">+1 202 992-6509</a>
+                    <a href="#" class="text-primaryColor font-normal font-Helvetical text-base leading-7">dummyemail@gmail.com</a>
+                </div>
+                <div class="lg:absolute lg:inset-x-0 bottom-5 md:flex justify-center lg:block hidden">
+                    <img class="mt-14 w-full mx-auto px-10" src="assets/img/logo.svg" alt="Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Area End Here -->
+     
+    <script src="assets/js/alpine.min.js" defer></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>
